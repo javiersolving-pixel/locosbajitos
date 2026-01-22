@@ -29,50 +29,19 @@
       line-height:1.65;
     }
 
-    header{
+    /* HEADER CON LOGO HORIZONTAL (sin texto) */
+    header.site-header{
       background: var(--azul-profundo);
-      padding: 2.6rem 1.5rem;
+      padding: 1.7rem 1.5rem;
       text-align:center;
       color: var(--marfil);
     }
 
-    .logo{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap: 1.1rem;
-    }
-
-    /* LOGO MONOCROMO (opción 1: “Mirada”) */
-    .logo-mark{
-      width:64px;
-      height:64px;
-      border-radius:50%;
-      background: var(--azul-profundo);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      box-shadow: 0 10px 22px rgba(0,0,0,0.18);
-      border: 1px solid rgba(244,241,236,0.20);
-      flex: 0 0 64px;
-    }
-    .logo-mark svg{
-      width: 56px;
-      height: 56px;
+    .header-logo{
+      width: min(1100px, 96vw); /* “a lo largo del encabezado” */
+      height: auto;
       display:block;
-    }
-
-    .logo-text h1{
-      margin:0;
-      font-size: 2.35rem;
-      letter-spacing: .08em;
-      color: var(--marfil);
-    }
-
-    .logo-text p{
-      margin: .35rem 0 0;
-      font-size: 1.05rem;
-      color: rgba(244,241,236,.92);
+      margin: 0 auto;
     }
 
     section{
@@ -149,31 +118,20 @@
 
     @media (max-width: 720px){
       .product{ grid-template-columns: 1fr; }
-      header{ padding: 2.2rem 1.2rem; }
-      .logo-text h1{ font-size: 2.05rem; }
+      header.site-header{ padding: 1.35rem 1.1rem; }
+      .header-logo{ width: min(980px, 94vw); }
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <div class="logo">
-    <!-- Reemplazo del “◉” por LOGO MONOCROMO (solo azules) -->
-    <div class="logo-mark" aria-label="Locos Bajitos" role="img">
-      <!-- Logo 1: Mirada (azul profundo + marfil + azul profundo) -->
-      <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-        <circle cx="32" cy="32" r="26" fill="#0B2A3F"/>
-        <circle cx="32" cy="32" r="12" fill="#F4F1EC"/>
-        <circle cx="32" cy="32" r="6"  fill="#0B2A3F"/>
-      </svg>
-    </div>
-
-    <div class="logo-text">
-      <h1>LOCOS BAJITOS</h1>
-      <p>Juegos para habitar ideas</p>
-    </div>
-  </div>
+<header class="site-header">
+  <img
+    src="https://solving.ar/wp-content/uploads/2026/01/logo-Locos-bajitos-blanco_H.png"
+    alt="Locos Bajitos · Juegos para habitar ideas"
+    class="header-logo"
+  />
 </header>
 
 <section>
