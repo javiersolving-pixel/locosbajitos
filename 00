@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Locos Bajitos · Juegos para habitar ideas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #f4efe7;
+      color: #2e2e2e;
+      line-height: 1.6;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.2rem;
+    }
+    .logo-mark {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: #2f3e46;
+      color: #f4efe7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      font-weight: bold;
+    }
+    .logo-text h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      letter-spacing: 0.08em;
+    }
+    .logo-text p {
+      margin: 0.4rem 0 0;
+      font-size: 1.05rem;
+    }
+    header {
+      background: #e8dfd0;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.6rem;
+      letter-spacing: 0.05em;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .card {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-bottom: 2rem;
+    }
+    .highlight {
+      background: #efe6d6;
+      padding: 1.5rem;
+      border-left: 6px solid #c3a86b;
+      margin: 2rem 0;
+    }
+    .product {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 6px;
+      background: #ddd;
+    }
+    footer {
+      background: #e8dfd0;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      font-size: 0.9rem;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.4rem;
+      background: #2e2e2e;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-mark">◉</div>
+    <div class="logo-text">
+      <h1>LOCOS BAJITOS</h1>
+      <p>Juegos para habitar ideas</p>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="card">
+    <h2>¿Qué es Locos Bajitos?</h2>
+    <p>
+      Locos Bajitos es un proyecto que transforma experiencias educativas reales en juegos de mesa.
+      Nace del legado pedagógico del libro <em>La Sinergia de los Locos Bajitos</em>, de Graciela Carotti de Strada.
+    </p>
+    <p>
+      Creemos que los chicos —los locos bajitos— no juegan solo para entretenerse, sino para entender el mundo,
+      hacer preguntas y pensar cómo vivir juntos.
+    </p>
+  </div>
+
+  <div class="highlight">
+    <strong>Habitar ideas</strong> significa entrar en ellas: construir, decidir, equivocarse y volver a intentar.
+    No explicamos conceptos desde afuera. Creamos experiencias para pensarlos desde adentro.
+  </div>
+
+  <div class="card">
+    <h2>Propósito</h2>
+    <p>
+      Ayudar a chicos, familias y educadores a pensar el mundo que habitan,
+      desarrollando pensamiento crítico, sistémico y colectivo a través del juego.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Juego disponible</h2>
+    <div class="product">
+      <img src="https://solving.ar/wp-content/uploads/2026/01/ChatGPT-Image-22-ene-2026-09_03_14-a.m.png" alt="Caja del juego Tablero de Sueños" />
+      <div>
+        <h3>Tablero de Sueños</h3>
+        <p>
+          Un juego para pensar la ciudad juntos. Inspirado en un proyecto educativo real,
+          invita a construir una ciudad y enfrentar los desafíos del crecimiento, la convivencia
+          y la planificación.
+        </p>
+        <a href="#" class="button">Ver el juego</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Libro</h2>
+    <p>
+      <strong>La Sinergia de los Locos Bajitos</strong> es el libro que da origen a este proyecto.
+      Relata experiencias educativas reales donde el aprendizaje surge del trabajo colectivo
+      y la participación activa de los chicos.
+    </p>
+    <a href="#" class="button">Comprar el libro</a>
+  </div>
+  <div class="card">
+    <h2>El legado de Graciela Carotti de Strada</h2>
+    <div class="product">
+      <img src="https://solving.ar/wp-content/uploads/2026/01/ChatGPT-Image-20-ene-2026-11_10_47-a.m.png" alt="Graciela Carotti de Strada" />
+      <div>
+        <p>
+          <strong>Graciela Carotti de Strada</strong> fue docente y educadora, creadora de proyectos pedagógicos
+          que ponían a los chicos en el centro del aprendizaje, entendiendo la educación como una experiencia
+          colectiva, creativa y profundamente humana.
+        </p>
+        <p>
+          A lo largo de su trayectoria desarrolló propuestas donde el juego, la reflexión y el trabajo grupal
+          eran herramientas para pensar la realidad, la convivencia y el lugar que cada uno ocupa en el mundo.
+        </p>
+        <p>
+          El proyecto <em>Locos Bajitos</em> busca mantener vivo ese legado, llevando esas experiencias educativas
+          a nuevos formatos para que sigan siendo habitadas por nuevas generaciones.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Locos Bajitos · Juegos para habitar ideas<br />
+  Proyecto inspirado en la obra de Graciela Carotti de Strada
+</footer>
+
+</body>
+</html>
