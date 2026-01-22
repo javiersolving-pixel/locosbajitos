@@ -4,111 +4,171 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Locos Bajitos · Juegos para habitar ideas</title>
+
   <style>
-    body {
-      margin: 0;
+    :root{
+      /* Paleta inspirada en la tapa */
+      --azul-profundo: #0B2A3F;
+      --azul-medio:    #1F5C8B;
+      --celeste-luz:   #5FAFD6;
+
+      --marfil:        #F4F1EC;
+      --gris-texto:    #4A5E6D;
+
+      /* UI */
+      --card:          #ffffff;
+      --borde:         rgba(11, 42, 63, 0.10);
+      --sombra:        0 10px 24px rgba(11, 42, 63, 0.10);
+    }
+
+    body{
+      margin:0;
       font-family: 'Georgia', serif;
-      background: #f4efe7;
-      color: #2e2e2e;
-      line-height: 1.6;
+      background: var(--marfil);
+      color: var(--azul-profundo);
+      line-height:1.65;
     }
-    .logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1.2rem;
+
+    header{
+      background: var(--azul-profundo);
+      padding: 2.6rem 1.5rem;
+      text-align:center;
+      color: var(--marfil);
     }
-    .logo-mark {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      background: #2f3e46;
-      color: #f4efe7;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2.2rem;
-      font-weight: bold;
+
+    .logo{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap: 1.1rem;
     }
-    .logo-text h1 {
-      margin: 0;
-      font-size: 2.4rem;
-      letter-spacing: 0.08em;
+
+    /* LOGO MONOCROMO (opción 1: “Mirada”) */
+    .logo-mark{
+      width:64px;
+      height:64px;
+      border-radius:50%;
+      background: var(--azul-profundo);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+      border: 1px solid rgba(244,241,236,0.20);
+      flex: 0 0 64px;
     }
-    .logo-text p {
-      margin: 0.4rem 0 0;
+    .logo-mark svg{
+      width: 56px;
+      height: 56px;
+      display:block;
+    }
+
+    .logo-text h1{
+      margin:0;
+      font-size: 2.35rem;
+      letter-spacing: .08em;
+      color: var(--marfil);
+    }
+
+    .logo-text p{
+      margin: .35rem 0 0;
       font-size: 1.05rem;
+      color: rgba(244,241,236,.92);
     }
-    header {
-      background: #e8dfd0;
-      padding: 3rem 1.5rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.6rem;
-      letter-spacing: 0.05em;
-    }
-    header p {
-      font-size: 1.1rem;
-      margin-top: 1rem;
-    }
-    section {
+
+    section{
       max-width: 900px;
-      margin: auto;
-      padding: 3rem 1.5rem;
+      margin:auto;
+      padding: 2.6rem 1.5rem;
     }
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
+
+    h2{
+      font-size: 1.85rem;
+      margin: 0 0 1rem 0;
+      color: var(--azul-profundo);
     }
-    .card {
-      background: #ffffff;
+
+    .card{
+      background: var(--card);
       padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      border-radius: 12px;
+      box-shadow: var(--sombra);
+      border: 1px solid var(--borde);
       margin-bottom: 2rem;
     }
-    .highlight {
-      background: #efe6d6;
+
+    .highlight{
+      background: rgba(95,175,214,0.16);
       padding: 1.5rem;
-      border-left: 6px solid #c3a86b;
+      border-left: 6px solid var(--celeste-luz);
+      border-radius: 10px;
       margin: 2rem 0;
+      color: var(--azul-profundo);
     }
-    .product {
-      display: grid;
+
+    .product{
+      display:grid;
       grid-template-columns: 1fr 2fr;
       gap: 2rem;
-      align-items: center;
+      align-items:center;
     }
-    .product img {
-      width: 100%;
-      border-radius: 6px;
-      background: #ddd;
+
+    .product img{
+      width:100%;
+      border-radius: 10px;
+      background:#ddd;
+      border: 1px solid var(--borde);
     }
-    footer {
-      background: #e8dfd0;
-      text-align: center;
-      padding: 2rem 1.5rem;
-      font-size: 0.9rem;
-    }
-    a.button {
-      display: inline-block;
+
+    a.button{
+      display:inline-block;
       margin-top: 1rem;
-      padding: 0.7rem 1.4rem;
-      background: #2e2e2e;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 4px;
-      font-size: 0.95rem;
+      padding: .75rem 1.35rem;
+      background: var(--azul-medio);
+      color: var(--marfil);
+      text-decoration:none;
+      border-radius: 8px;
+      font-size: .95rem;
+      border: 1px solid rgba(244,241,236,0.25);
+      transition: transform .08s ease, background .12s ease;
+    }
+
+    a.button:hover{
+      background: var(--celeste-luz);
+      color: var(--azul-profundo);
+      transform: translateY(-1px);
+    }
+
+    footer{
+      background: var(--azul-profundo);
+      text-align:center;
+      padding: 2rem 1.5rem;
+      font-size:.95rem;
+      color: rgba(244,241,236,.92);
+      border-top: 1px solid rgba(244,241,236,.18);
+    }
+
+    @media (max-width: 720px){
+      .product{ grid-template-columns: 1fr; }
+      header{ padding: 2.2rem 1.2rem; }
+      .logo-text h1{ font-size: 2.05rem; }
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <div class="logo">
-    <div class="logo-mark">◉</div>
+    <!-- Reemplazo del “◉” por LOGO MONOCROMO (solo azules) -->
+    <div class="logo-mark" aria-label="Locos Bajitos" role="img">
+      <!-- Logo 1: Mirada (azul profundo + marfil + azul profundo) -->
+      <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <circle cx="32" cy="32" r="26" fill="#0B2A3F"/>
+        <circle cx="32" cy="32" r="12" fill="#F4F1EC"/>
+        <circle cx="32" cy="32" r="6"  fill="#0B2A3F"/>
+      </svg>
+    </div>
+
     <div class="logo-text">
       <h1>LOCOS BAJITOS</h1>
       <p>Juegos para habitar ideas</p>
@@ -167,6 +227,7 @@
     </p>
     <a href="#" class="button">Comprar el libro</a>
   </div>
+
   <div class="card">
     <h2>El legado de Graciela Carotti de Strada</h2>
     <div class="product">
